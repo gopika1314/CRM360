@@ -1,0 +1,559 @@
+.companies-page {
+    padding: 30px;
+    background: #f8fafc;
+    min-height: 100vh;
+}
+
+.companies-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.companies-label {
+    display: inline-block;
+    margin-bottom: 7px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #2563eb;
+}
+
+.companies-header h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #1e293b;
+    font-weight: 700;
+}
+
+.companies-header p {
+    margin: 7px 0 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.add-company-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 19px;
+    border-radius: 9px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.add-company-btn span {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.add-company-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.company-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.company-summary-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.company-summary-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    flex-shrink: 0;
+}
+
+.company-summary-icon.total {
+    background: #dbeafe;
+}
+
+.company-summary-icon.active-icon {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.company-summary-icon.inactive-icon {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+.company-summary-card span {
+    display: block;
+    color: #64748b;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.company-summary-card strong {
+    display: block;
+    color: #1e293b;
+    font-size: 25px;
+}
+
+.company-form-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 13px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.05);
+}
+
+.company-form-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 22px;
+}
+
+.company-form-heading > div > span {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #2563eb;
+}
+
+.company-form-heading h2 {
+    margin: 5px 0 4px;
+    color: #1e293b;
+    font-size: 21px;
+}
+
+.company-form-heading p {
+    margin: 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.company-close-btn {
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 8px;
+    background: #f1f5f9;
+    color: #64748b;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.company-close-btn:hover {
+    background: #e2e8f0;
+}
+
+.company-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px;
+}
+
+.company-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.company-form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.company-form-group input,
+.company-form-group select,
+.company-form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 11px 12px;
+    font-size: 14px;
+    color: #1e293b;
+    background: white;
+    outline: none;
+    transition: 0.2s;
+    font-family: inherit;
+}
+
+.company-form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.company-form-group input:focus,
+.company-form-group select:focus,
+.company-form-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.company-form-group input::placeholder,
+.company-form-group textarea::placeholder {
+    color: #94a3b8;
+}
+
+.company-full-width {
+    grid-column: 1 / -1;
+}
+
+.company-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.company-form-actions button {
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.company-cancel-btn {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.company-cancel-btn:hover {
+    background: #e2e8f0;
+}
+
+.company-save-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.company-save-btn:hover {
+    background: #1d4ed8;
+}
+
+.company-list-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.05);
+}
+
+.company-list-header {
+    padding: 20px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.company-list-header h2 {
+    margin: 0 0 4px;
+    color: #1e293b;
+    font-size: 18px;
+}
+
+.company-list-header > div:first-child span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.company-search {
+    width: 280px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: white;
+}
+
+.company-search > span {
+    font-size: 15px;
+}
+
+.company-search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: #334155;
+    background: transparent;
+}
+
+.company-search input::placeholder {
+    color: #94a3b8;
+}
+
+.company-clear-search {
+    border: none;
+    background: transparent;
+    color: #94a3b8;
+    font-size: 19px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.company-clear-search:hover {
+    color: #475569;
+}
+
+.companies-table-container {
+    overflow-x: auto;
+}
+
+.companies-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1000px;
+}
+
+.companies-table th {
+    padding: 13px 16px;
+    text-align: left;
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.companies-table td {
+    padding: 15px 16px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #475569;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+.companies-table tbody tr {
+    transition: 0.15s;
+}
+
+.companies-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.company-id {
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.company-name-cell {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    min-width: 190px;
+}
+
+.company-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
+    background: #dbeafe;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    flex-shrink: 0;
+}
+
+.company-name-cell strong {
+    display: block;
+    color: #1e293b;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.company-name-cell span {
+    display: block;
+    color: #94a3b8;
+    font-size: 11px;
+    max-width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.industry-badge {
+    display: inline-block;
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 5px 9px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.company-location strong {
+    display: block;
+    color: #475569;
+    font-size: 13px;
+}
+
+.company-location span {
+    display: block;
+    color: #94a3b8;
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+.company-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.company-status span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.company-status.active {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.company-status.active span {
+    background: #16a34a;
+}
+
+.company-status.inactive {
+    background: #f1f5f9;
+    color: #64748b;
+}
+
+.company-status.inactive span {
+    background: #94a3b8;
+}
+
+.company-actions {
+    display: flex;
+    gap: 7px;
+}
+
+.company-edit,
+.company-delete {
+    border: none;
+    padding: 7px 11px;
+    border-radius: 7px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.company-edit {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.company-edit:hover {
+    background: #dbeafe;
+}
+
+.company-delete {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.company-delete:hover {
+    background: #fee2e2;
+}
+
+.company-table-message {
+    text-align: center !important;
+    padding: 45px !important;
+    color: #94a3b8 !important;
+    font-size: 14px !important;
+}
+
+@media (max-width: 900px) {
+
+    .company-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .company-list-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .company-search {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .companies-page {
+        padding: 20px;
+    }
+
+    .companies-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .add-company-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .company-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .company-full-width {
+        grid-column: auto;
+    }
+
+    .company-form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .company-form-actions button {
+        width: 100%;
+    }
+
+}

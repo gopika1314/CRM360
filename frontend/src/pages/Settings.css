@@ -1,0 +1,277 @@
+.settings-page {
+    min-height: 100vh;
+    padding: 30px;
+    background: #f5f7fb;
+}
+
+.settings-header {
+    margin-bottom: 30px;
+}
+
+.settings-header h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #172033;
+}
+
+.settings-header p {
+    color: #7b8494;
+    margin-top: 8px;
+}
+
+.settings-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 25px;
+}
+
+.settings-card {
+    background: white;
+    border-radius: 16px;
+    padding: 28px;
+    border: 1px solid #edf0f5;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.settings-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.settings-title > span {
+    width: 50px;
+    height: 50px;
+    background: #eaf0ff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.settings-title h2 {
+    margin: 0;
+    color: #172033;
+    font-size: 20px;
+}
+
+.settings-title p {
+    margin: 5px 0 0;
+    color: #8992a2;
+    font-size: 13px;
+}
+
+.settings-card label {
+    display: block;
+    margin: 18px 0 7px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.settings-card input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #dce1e9;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.settings-card input:focus {
+    border-color: #2563eb;
+}
+
+.settings-card button {
+    margin-top: 25px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.settings-card button:hover {
+    background: #1d4ed8;
+}
+
+.success-message {
+    margin-top: 15px;
+    padding: 10px;
+    background: #dcfce7;
+    color: #15803d;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.system-info > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.system-info span {
+    color: #7b8494;
+}
+
+.system-info strong {
+    color: #273247;
+}
+
+@media (max-width: 800px) {
+    .settings-container {
+        grid-template-columns: 1fr;
+    }
+}
+.settings-success {
+    margin-bottom: 20px;
+    padding: 14px 18px;
+    border-radius: 10px;
+    background: #dcfce7;
+    color: #166534;
+    font-weight: 600;
+}
+
+.settings-error {
+    margin-bottom: 20px;
+    padding: 14px 18px;
+    border-radius: 10px;
+    background: #fee2e2;
+    color: #991b1b;
+    font-weight: 600;
+}
+
+.settings-form-group {
+    margin-bottom: 18px;
+}
+
+.settings-form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #374151;
+}
+
+.settings-form-group input,
+.settings-form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+    background: white;
+    color: #374151;
+    font-size: 14px;
+    outline: none;
+}
+
+.settings-form-group input:focus,
+.settings-form-group select:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.settings-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.save-settings-btn,
+.reset-settings-btn {
+    border: none;
+    padding: 12px 18px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.save-settings-btn {
+    background: #4f46e5;
+    color: white;
+}
+
+.save-settings-btn:hover {
+    background: #4338ca;
+}
+
+.reset-settings-btn {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.reset-settings-btn:hover {
+    background: #d1d5db;
+}
+
+.security-info {
+    display: grid;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.security-info div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    border-radius: 10px;
+    background: #f8fafc;
+}
+
+.security-info span {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.security-info strong {
+    color: #111827;
+    font-size: 14px;
+}
+
+.active-session {
+    color: #16a34a !important;
+}
+
+.logout-settings-btn {
+    width: 100%;
+    border: none;
+    padding: 13px;
+    border-radius: 9px;
+    background: #dc2626;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.logout-settings-btn:hover {
+    background: #b91c1c;
+}
+
+@media (max-width: 700px) {
+    .settings-actions {
+        flex-direction: column;
+    }
+
+    .save-settings-btn,
+    .reset-settings-btn {
+        width: 100%;
+    }
+
+    .security-info div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}

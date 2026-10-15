@@ -1,0 +1,377 @@
+.crm-layout {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f6f8;
+}
+
+.crm-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #111827;
+    border: none;
+    box-shadow: none;
+    z-index: 1000;
+}
+
+.sidebar-collapsed .crm-sidebar {
+    width: 72px;
+}
+
+.sidebar-brand {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    background: #111827;
+    border: none;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background: #4f46e5;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.brand-text {
+    margin-left: 12px;
+}
+
+.brand-text h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.brand-text h2 span {
+    color: #818cf8;
+}
+
+.brand-text p {
+    margin: 2px 0 0;
+    color: #8b95a7;
+    font-size: 9px;
+    font-weight: 500;
+}
+
+.sidebar-menu {
+    flex: 1;
+    padding: 16px 14px;
+    overflow-y: auto;
+}
+
+.menu-section {
+    margin-bottom: 21px;
+}
+
+.menu-section-title {
+    padding: 0 12px;
+    margin-bottom: 8px;
+    color: #687386;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    height: 43px;
+    margin-bottom: 3px;
+    padding: 0 12px;
+    gap: 13px;
+    border-radius: 7px;
+    color: #aeb7c6;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.menu-item:hover {
+    background: #1c2535;
+    color: #ffffff;
+}
+
+.menu-item.active {
+    background: #252e40;
+    color: #ffffff;
+}
+
+.menu-icon {
+    width: 21px;
+    min-width: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9aa5b7;
+    font-size: 16px;
+}
+
+.menu-item.active .menu-icon {
+    color: #818cf8;
+}
+
+.sidebar-bottom {
+    padding: 13px 14px;
+    background: #111827;
+    border: none;
+}
+
+.logout-button {
+    width: 100%;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 0 12px;
+    border: none;
+    border-radius: 7px;
+    background: transparent;
+    color: #aeb7c6;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.2s ease;
+}
+
+.logout-button:hover {
+    background: #1c2535;
+    color: #ffffff;
+}
+
+.logout-button .menu-icon {
+    color: #9aa5b7;
+}
+
+.crm-main {
+    width: calc(100% - 260px);
+    min-height: 100vh;
+    margin-left: 260px;
+    background: #f5f6f8;
+}
+
+.sidebar-collapsed .crm-main {
+    width: calc(100% - 72px);
+    margin-left: 72px;
+}
+
+.crm-header {
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background: #ffffff;
+    border: none;
+    box-shadow: none;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.sidebar-toggle {
+    width: 39px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e3e6ea;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #4b5563;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.sidebar-toggle:hover {
+    background: #f5f6f8;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title span {
+    color: #20242b;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.header-title small {
+    margin-top: 2px;
+    color: #9299a4;
+    font-size: 9px;
+    font-weight: 500;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.notification-button {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    color: #69717e;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.notification-dot {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #4f46e5;
+}
+
+.header-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-avatar {
+    width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #4f46e5;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info strong {
+    color: #242831;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.user-info span {
+    margin-top: 2px;
+    color: #8b929d;
+    font-size: 9px;
+    font-weight: 500;
+}
+
+.crm-content {
+    width: 100%;
+    min-height: calc(100vh - 76px);
+    padding: 0;
+    background: #f5f6f8;
+}
+
+@media (max-width: 900px) {
+    .crm-sidebar {
+        width: 72px;
+    }
+
+    .brand-text,
+    .menu-section-title,
+    .menu-item span:not(.menu-icon),
+    .logout-button span:not(.menu-icon) {
+        display: none;
+    }
+
+    .sidebar-brand {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .sidebar-menu {
+        padding: 15px 12px;
+    }
+
+    .menu-item,
+    .logout-button {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .crm-main {
+        width: calc(100% - 72px);
+        margin-left: 72px;
+    }
+
+    .header-user .user-info {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .crm-header {
+        padding: 0 15px;
+    }
+
+    .header-title {
+        display: none;
+    }
+
+    .crm-content {
+        padding: 0;
+    }
+}
+html,
+body,
+#root {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.crm-layout {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.crm-sidebar {
+    overflow-x: hidden;
+}
+
+.sidebar-menu {
+    min-height: 0;
+    scrollbar-width: none;
+}
+
+.sidebar-menu::-webkit-scrollbar {
+    display: none;
+}

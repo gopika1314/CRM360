@@ -1,0 +1,326 @@
+.activities-page {
+    min-height: 100%;
+    padding: 30px;
+    background: #f5f6f8;
+    color: #20242b;
+}
+
+.activities-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 25px;
+    margin-bottom: 28px;
+}
+
+.activities-header h1 {
+    margin: 0;
+    color: #171a1f;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.activities-header p {
+    margin: 8px 0 0;
+    color: #737b87;
+    font-size: 15px;
+}
+
+.add-activity-btn {
+    height: 44px;
+    padding: 0 19px;
+    border: 1px solid #4f46e5;
+    border-radius: 7px;
+    background: #4f46e5;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.add-activity-btn:hover {
+    background: #4338ca;
+    border-color: #4338ca;
+}
+
+.activity-form-card {
+    margin-bottom: 22px;
+    padding: 27px;
+    background: #ffffff;
+    border: 1px solid #e2e5e9;
+    border-radius: 9px;
+    box-shadow: 0 2px 7px rgba(20, 25, 35, 0.035);
+}
+
+.activity-form-card h2 {
+    margin: 0 0 23px;
+    color: #20242b;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.activity-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19px;
+}
+
+.activity-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-form-group label {
+    margin-bottom: 8px;
+    color: #343941;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.activity-form-group input,
+.activity-form-group select,
+.activity-form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 13px;
+    border: 1px solid #d9dde3;
+    border-radius: 7px;
+    outline: none;
+    background: #ffffff;
+    color: #252932;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.activity-form-group input,
+.activity-form-group select {
+    height: 44px;
+}
+
+.activity-form-group textarea {
+    min-height: 105px;
+    resize: vertical;
+    margin-top: 19px;
+}
+
+.activity-form-group input:focus,
+.activity-form-group select:focus,
+.activity-form-group textarea:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.08);
+}
+
+.activity-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 21px;
+}
+
+.activity-form-actions button {
+    height: 42px;
+    padding: 0 18px;
+    border-radius: 7px;
+    border: none;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.activity-form-actions button[type="button"] {
+    background: #f0f1f3;
+    color: #4b525c;
+}
+
+.activity-form-actions button[type="button"]:hover {
+    background: #e5e7eb;
+}
+
+.activity-form-actions button[type="submit"] {
+    background: #4f46e5;
+    color: #ffffff;
+}
+
+.activity-form-actions button[type="submit"]:hover {
+    background: #4338ca;
+}
+
+.activity-search {
+    margin-bottom: 17px;
+}
+
+.activity-search input {
+    width: 100%;
+    height: 44px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    border: 1px solid #dfe2e7;
+    border-radius: 7px;
+    outline: none;
+    background: #ffffff;
+    color: #252932;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.activity-search input::placeholder {
+    color: #9aa1ab;
+}
+
+.activity-search input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.08);
+}
+
+.activities-table {
+    overflow-x: auto;
+    background: #ffffff;
+    border: 1px solid #e2e5e9;
+    border-radius: 9px;
+    box-shadow: 0 2px 7px rgba(20, 25, 35, 0.035);
+}
+
+.activities-table table {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+}
+
+.activities-table th {
+    padding: 15px 17px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e2e5e9;
+    color: #555c67;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.activities-table td {
+    padding: 16px 17px;
+    border-bottom: 1px solid #edf0f2;
+    color: #3c424b;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.activities-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.activities-table tbody tr {
+    transition: 0.15s ease;
+}
+
+.activities-table tbody tr:hover {
+    background: #fafafa;
+}
+
+.activities-table td:first-child {
+    color: #777f8a;
+    font-weight: 700;
+}
+
+.activities-table td:nth-child(3) {
+    color: #20242b;
+    font-weight: 700;
+}
+
+.activity-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 11px;
+    border-radius: 5px;
+    background: #f1f3f5;
+    color: #4b525c;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.activity-edit,
+.activity-delete {
+    height: 33px;
+    padding: 0 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.activity-edit {
+    margin-right: 7px;
+    background: #f1f2f4;
+    color: #454b55;
+}
+
+.activity-edit:hover {
+    background: #e5e7eb;
+    color: #20242b;
+}
+
+.activity-delete {
+    background: #f1f2f4;
+    color: #6b4b4b;
+}
+
+.activity-delete:hover {
+    background: #e8e9eb;
+    color: #991b1b;
+}
+
+.activities-table td[colspan] {
+    padding: 38px;
+    color: #8b929d;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    .activities-page {
+        padding: 24px;
+    }
+
+    .activity-form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .activities-page {
+        padding: 20px;
+    }
+
+    .activities-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .activities-header h1 {
+        font-size: 28px;
+    }
+
+    .add-activity-btn {
+        width: 100%;
+    }
+
+    .activity-form-card {
+        padding: 20px;
+    }
+
+    .activity-form-actions {
+        justify-content: stretch;
+    }
+
+    .activity-form-actions button {
+        flex: 1;
+    }
+}

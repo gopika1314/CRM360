@@ -1,0 +1,31 @@
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# React and Node.js
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs and local database files
+*.log
+*.mdf
+*.ldf
+*.bak
+
+CRM360_FINAL_SUBMISSION.zip

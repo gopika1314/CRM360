@@ -1,0 +1,281 @@
+.meetings-page {
+    min-height: 100%;
+    padding: 30px;
+    background: #f5f6f8;
+    color: #20242b;
+}
+
+.meetings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 25px;
+    margin-bottom: 28px;
+}
+
+.meetings-header h1 {
+    margin: 0;
+    color: #171a1f;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.meetings-header p {
+    margin: 8px 0 0;
+    color: #737b87;
+    font-size: 15px;
+}
+
+.add-meeting-btn {
+    height: 44px;
+    padding: 0 19px;
+    border: 1px solid #4f46e5;
+    border-radius: 7px;
+    background: #4f46e5;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.add-meeting-btn:hover {
+    background: #4338ca;
+    border-color: #4338ca;
+}
+
+.meeting-form-card,
+.meetings-card {
+    margin-bottom: 22px;
+    padding: 27px;
+    background: #ffffff;
+    border: 1px solid #e2e5e9;
+    border-radius: 9px;
+    box-shadow: 0 2px 7px rgba(20, 25, 35, 0.035);
+}
+
+.meeting-form-card h2 {
+    margin: 0 0 23px;
+    color: #20242b;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #343941;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 13px;
+    border: 1px solid #d9dde3;
+    border-radius: 7px;
+    outline: none;
+    background: #ffffff;
+    color: #252932;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.form-group input,
+.form-group select {
+    height: 44px;
+}
+
+.form-group textarea {
+    min-height: 105px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.08);
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.save-btn,
+.cancel-btn,
+.edit-btn,
+.delete-btn {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.save-btn {
+    height: 42px;
+    padding: 0 18px;
+    background: #16a34a;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+
+.save-btn:hover {
+    background: #15803d;
+}
+
+.cancel-btn {
+    height: 42px;
+    padding: 0 18px;
+    background: #64748b;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.cancel-btn:hover {
+    background: #475569;
+}
+
+.meetings-card {
+    overflow-x: auto;
+}
+
+.meetings-table {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+}
+
+.meetings-table th,
+.meetings-table td {
+    padding: 15px 17px;
+    border-bottom: 1px solid #edf0f2;
+    text-align: left;
+}
+
+.meetings-table th {
+    background: #f8f9fa;
+    color: #555c67;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.meetings-table td {
+    color: #3c424b;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.meetings-table tbody tr {
+    transition: 0.15s ease;
+}
+
+.meetings-table tbody tr:hover {
+    background: #fafafa;
+}
+
+.meetings-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.meetings-table td:first-child {
+    color: #777f8a;
+    font-weight: 700;
+}
+
+.meeting-status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+.edit-btn {
+    margin-right: 6px;
+    padding: 7px 13px;
+    background: #2563eb;
+    color: white;
+    font-size: 13px;
+}
+
+.edit-btn:hover {
+    background: #1d4ed8;
+}
+
+.delete-btn {
+    margin-left: 4px;
+    padding: 7px 13px;
+    background: #dc2626;
+    color: white;
+    font-size: 13px;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+}
+
+@media (max-width: 900px) {
+    .meetings-page {
+        padding: 24px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .meetings-page {
+        padding: 20px;
+    }
+
+    .meetings-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .meetings-header h1 {
+        font-size: 28px;
+    }
+
+    .add-meeting-btn {
+        width: 100%;
+    }
+
+    .meeting-form-card,
+    .meetings-card {
+        padding: 20px;
+    }
+
+    .form-buttons {
+        justify-content: stretch;
+    }
+
+    .save-btn,
+    .cancel-btn {
+        flex: 1;
+    }
+}
